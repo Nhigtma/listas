@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Opciones</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Listas en Programación</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="option-container">
-        <button class="option" id="concepto-lista">Concepto de lista</button>
-        <button class="option" id="lista-enlazada">Lista enlazada</button>
-        <button class="option" id="lista-doble-enlazada">Lista doblemente enlazada</button>
-        <button class="option" id="lista-enlazada-circular">Lista enlazada circular</button>
-    </div>
+    <div class="container">
+        <!-- Menú de opciones a la izquierda -->
+        <div class="menu">
+            <button class="option" id="concepto-lista">Concepto de lista</button>
+            <button class="option" id="lista-enlazada">Lista enlazada</button>
+            <button class="option" id="lista-doble-enlazada">Lista doblemente enlazada</button>
+            <button class="option" id="lista-enlazada-circular">Lista enlazada circular</button>
+        </div>
 
-    <div class="description-container" id="description">
-        <!-- Aquí se mostrará el contenido cuando se seleccione una opción -->
-    </div>
+        <!-- Contenedor para las descripciones a la derecha -->
+        <div class="content">
+            <div class="description-container" id="concepto-lista-description">
+                <h2>Concepto de lista</h2>
+                <p>Una lista en programación es una estructura de datos que almacena una colección de elementos ordenados y accesibles por índices. Los elementos pueden ser de cualquier tipo y la lista permite realizar operaciones como agregar, eliminar y modificar elementos. Las listas son mutables en muchos lenguajes, lo que significa que se pueden cambiar después de su creación.</p>
+                <img src="/img/concepto1.jpg" alt="Concepto de lista">
+            </div>
 
-    <script src="/js/app.js"></script>
+            <div class="description-container" id="lista-enlazada-description">
+                <h2>Lista enlazada</h2>
+                <p>Una lista enlazada es una estructura de datos compuesta por nodos, donde cada nodo contiene un valor y una referencia (o enlace) al siguiente nodo en la secuencia. A diferencia de las listas tradicionales, que utilizan índices para acceder a los elementos, las listas enlazadas permiten una inserción y eliminación de elementos más eficiente.</p>
+                <img src="/img/enlazada1.jpg" alt="Lista enlazada">
+            </div>
+
+            <div class="description-container" id="lista-doble-enlazada-description">
+                <h2>Lista doblemente enlazada</h2>
+                <p>Una lista doblemente enlazada es una variante de la lista enlazada en la que cada nodo contiene dos referencias: una al siguiente nodo y otra al nodo anterior. Esto permite una navegación bidireccional a través de la lista, facilitando la inserción y eliminación de elementos en cualquier posición.</p>
+                <img src="/img/doble1.jpg" alt="Lista doblemente enlazada">
+            </div>
+
+            <div class="description-container" id="lista-enlazada-circular-description">
+                <h2>Lista enlazada circular</h2>
+                <p>Una lista circular es una estructura de datos en la que los nodos están conectados de manera que el último nodo apunta de nuevo al primer nodo, formando un ciclo continuo. En una lista circular, no hay un final explícito, ya que el recorrido de la lista puede continuar indefinidamente.</p>
+                <img src="/img/circular1.jpg" alt="Lista enlazada circular">
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>
